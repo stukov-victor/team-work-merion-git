@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Магазин одежды - Каталог</title>
+</head>
+
+<body>
+    <main id="catalog">
+        <header>
+            <div class="wrap">
+                <a href="index.html" class="logo">second-goods</a>
+                <nav class="menu">
+
+                    <span class="burger">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+
+                    <ul class="menu-list" id="mainMenu">
+                        <li class="menu-list-item"><a href="index.html" class="menu-link">Home</a></li>
+                        <li class="menu-list-item active"><a href="catalog.html" class="menu-link">Discover</a></li>
+                        <li class="menu-list-item"><a href="#" class="menu-link">FAQs</a></li>
+                        <li class="menu-list-item"><a href="#" class="menu-link">About Us</a></li>
+                    </ul>
+                </nav>
+                <div class="auth">
+                    <a href="catalog.html" class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <span class="separator"></span>
+                    <a href="#" class="light-button">Sign In</a>
+                </div>
+            </div>
+        </header>
+        <section id="main">
+
+            <div class="background-overlay"></div>
+            <div class="background-image"></div>
+
+            <div class="wrap">
+                <h1>Summer Sales</h1>
+            </div>
+        </section>
+        <div class="catalog-wrapper">
+            <div class="wrap">
+                <aside class="filters">
+                    <form action="#" method="get">
+
+
+                        <div class="filter-products-wrap">
+                            <h3>Products</h3>
+
+                            <label class="filter filter-products">
+                                <input type="radio" class="radio" name="filter-products" value="0" >
+                                <span class="radio-text">View All</span>
+                            </label>
+                            <label class="filter filter-products">
+                                <input type="radio" class="radio" name="filter-products" value="1" >
+                                <span class="radio-text">Dresses</span>
+                            </label>
+                            <label class="filter filter-products">
+                                <input type="radio" class="radio" name="filter-products" value="2" >
+                                <span class="radio-text">Blouses</span>
+                            </label>
+                            <label class="filter filter-products">
+                                <input type="radio" class="radio" name="filter-products" value="3" >
+                                <span class="radio-text">Jeans</span>
+                            </label>
+                            <label class="filter filter-products">
+                                <input type="radio" class="radio" name="filter-products" value="4" >
+                                <span class="radio-text">Skirts</span>
+                            </label>
+                            <label class="filter filter-products">
+                                <input type="radio" class="radio" name="filter-products" value="5" >
+                                <span class="radio-text">Shorts</span>
+                            </label>
+
+                            <div class="hidden-elems">
+                                <label class="filter filter-products">
+                                    <input type="radio" class="radio" name="filter-products" value="6" >
+                                    <span class="radio-text">View All -ext</span>
+                                </label>
+                                <label class="filter filter-products">
+                                    <input type="radio" class="radio" name="filter-products" value="7" >
+                                    <span class="radio-text">Dresses -ext</span>
+                                </label>
+                                <label class="filter filter-products">
+                                    <input type="radio" class="radio" name="filter-products" value="8" >
+                                    <span class="radio-text">Blouses -ext</span>
+                                </label>
+                            </div>
+
+                            <span class="view-more">
+                                <span>View More</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+
+                           
+                        </div>
+
+
+                        <div class="filter-categories-wrap">
+                            <h3>Categories</h3>
+
+                            <label class="filter filter-categories">
+                                <input type="radio" class="radio" name="filter-categories" value="0">
+                                <span class="radio-text">View All</span>
+                            </label>
+                            <label class="filter filter-categories">
+                                <input type="radio" class="radio" name="filter-categories" value="1">
+                                <span class="radio-text">Casual</span>
+                            </label>
+                            <label class="filter filter-categories">
+                                <input type="radio" class="radio" name="filter-categories" value="2">
+                                <span class="radio-text">Office Wear</span>
+                            </label>
+                            <label class="filter filter-categories">
+                                <input type="radio" class="radio" name="filter-categories" value="3">
+                                <span class="radio-text">Street Wear</span>
+                            </label>
+                            <label class="filter filter-categories">
+                                <input type="radio" class="radio" name="filter-categories" value="4">
+                                <span class="radio-text">Graduation</span>
+                            </label>
+                            <label class="filter filter-categories">
+                                <input type="radio" class="radio" name="filter-categories" value="5">
+                                <span class="radio-text">Summery</span>
+                            </label>
+
+                            <div class="hidden-elems">
+                                <label class="filter filter-categories">
+                                    <input type="radio" class="radio" name="filter-categories" value="6" >
+                                    <span class="radio-text">View All -ext</span>
+                                </label>
+                                <label class="filter filter-categories">
+                                    <input type="radio" class="radio" name="filter-categories" value="7" >
+                                    <span class="radio-text">Casual -ext</span>
+                                </label>
+                                <label class="filter filter-categories">
+                                    <input type="radio" class="radio" name="filter-categories" value="8" >
+                                    <span class="radio-text">Office Wear -ext</span>
+                                </label>
+                            </div>
+
+                            <span class="view-more">
+                                <span>View More</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </div>
+
+                        <div class="filter-location-wrap">
+                            <h3>Location</h3>
+
+                            <label class="filter filter-location">
+                                <input type="radio" class="radio" name="filter-location" value="0">
+                                <span class="radio-text">Jabodetabek</span>
+                            </label>
+                            <label class="filter filter-location">
+                                <input type="radio" class="radio" name="filter-location" value="1">
+                                <span class="radio-text">DKI Jakarta</span>
+                            </label>
+                            <label class="filter filter-location">
+                                <input type="radio" class="radio" name="filter-location" value="2">
+                                <span class="radio-text">Jawa Barat</span>
+                            </label>
+                            <label class="filter filter-location">
+                                <input type="radio" class="radio" name="filter-location" value="3">
+                                <span class="radio-text">Jawa Timur</span>
+                            </label>
+                            <label class="filter filter-location">
+                                <input type="radio" class="radio" name="filter-location" value="4">
+                                <span class="radio-text">Jawa Tengah</span>
+                            </label>
+
+                            <div class="hidden-elems">
+                                <label class="filter filter-location">
+                                    <input type="radio" class="radio" name="filter-location" value="6" >
+                                    <span class="radio-text">Jabodetabek -ext</span>
+                                </label>
+                                <label class="filter filter-location">
+                                    <input type="radio" class="radio" name="filter-location" value="7" >
+                                    <span class="radio-text">DKI Jakarta -ext</span>
+                                </label>
+                                <label class="filter filter-location">
+                                    <input type="radio" class="radio" name="filter-location" value="8" >
+                                    <span class="radio-text">Jawa Barat -ext</span>
+                                </label>
+                            </div>
+
+                            <span class="view-more">
+                                <span>View More</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </div>
+
+
+                        <div class="filter-price-wrap">
+                            <h3>Price</h3>
+
+                            <div>
+                                <input type="number" name="min-price" placeholder="Rp min">
+                                <span>—</span>
+                                <input type="number" name="max-price" placeholder="Rp max">
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="blue-button">Apply</button>
+
+
+                        <div class="filter-rating-wrap">
+                            <h3>Rating</h3>
+
+                            <label class="filter filter-rating">
+                                <input type="radio" class="radio" name="filter-rating">
+                                <span class="rating radio-text">
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                </span>
+                            </label>
+                            <label class="filter filter-rating">
+                                <input type="radio" class="radio" name="filter-rating" >
+                                <span class="rating radio-text">
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-regular fa-star rating-star"></i>
+                                </span>
+                            </label>
+                            <label class="filter filter-rating">
+                                <input type="radio" class="radio" name="filter-rating" >
+                                <span class="rating radio-text">
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-regular fa-star rating-star"></i>
+                                    <i class="fa-regular fa-star rating-star"></i>
+                                </span>
+                            </label>
+                            <label class="filter filter-rating">
+                                <input type="radio" class="radio" name="filter-rating">
+                                <span class="rating radio-text">
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-regular fa-star rating-star"></i>
+                                    <i class="fa-regular fa-star rating-star"></i>
+                                    <i class="fa-regular fa-star rating-star"></i>
+                                </span>
+                            </label>
+                            <label class="filter filter-rating">
+                                <input type="radio" class="radio" name="filter-rating">
+                                <span class="rating radio-text">
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-regular fa-star rating-star"></i>
+                                    <i class="fa-regular fa-star rating-star"></i>
+                                    <i class="fa-regular fa-star rating-star"></i>
+                                    <i class="fa-regular fa-star rating-star"></i>
+                                </span>
+                            </label>
+                        </div>
+
+                    </form>
+                </aside>
+
+
+                <form action="/" method="get" name="search-form" class="search-form">
+                    <div>
+                        <span class="form-control-wrap">
+                            <input type="search" class="form-control" placeholder="Search">
+                        </span>
+                        <button class="form-control submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="catalog-cards-wrapper">
+                    <div class="sorting">
+                        <ul>
+                            <li>Sort By</li>
+                            <li>Size</li>
+                            <li>Color</li>
+                            <li>Product Type</li>
+                            <li>Style</li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <a href="product.html" class="card-wrap">
+                                <span class="card-hover"></span>
+
+                                <img src="img/cards/card1.png" alt="">
+                                <div class="card-title-with-rating">
+                                    <div class="card-title">Vintage Cardigan</div>
+                                    <div class="card-rating">
+                                        <span class="average-rating-value">4.5</span>
+                                        <i class="fa-solid fa-star rating-star"></i>
+                                    </div>
+                                </div>
+                                <div class="card-price-with-quantity">
+                                    <div class="card-price">Rp <span>150.000,00</span></div>
+                                    <div class="card-quantity">
+                                        (<span>17</span>)
+                                    </div>
+                                </div>
+                                <div class="card-shipping-term"><span>5</span> days</div>
+                                <div class="card-location">Jakarta Barat</div>
+                            </a>
+
+                            <div class="card-buttons">
+                                <span class="card-review"></span>
+                                <span class="card-add-to-cart">Add to Cart</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <a href="product.html" class="card-wrap">
+                                <span class="card-hover"></span>
+                                <img src="img/cards/card2.png" alt="">
+                                <div class="card-title-with-rating">
+                                    <div class="card-title">Vintage Cardigan</div>
+                                    <div class="card-rating">
+                                        <span class="average-rating-value">4.5</span>
+                                        <i class="fa-solid fa-star rating-star"></i>
+                                    </div>
+                                </div>
+                                <div class="card-price-with-quantity">
+                                    <div class="card-price">Rp <span>150.000,00</span></div>
+                                    <div class="card-quantity">
+                                        (<span>17</span>)
+                                    </div>
+                                </div>
+                                <div class="card-shipping-term"><span>5</span> days</div>
+                                <div class="card-location">Jakarta Barat</div>
+                            </a>
+
+                            <div class="card-buttons">
+                                <span class="card-review"></span>
+                                <span class="card-add-to-cart">Add to Cart</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <a href="product.html" class="card-wrap">
+                                <span class="card-hover"></span>
+                                <img src="img/cards/card3.png" alt="">
+                                <div class="card-title-with-rating">
+                                    <div class="card-title">Vintage Cardigan</div>
+                                    <div class="card-rating">
+                                        <span class="average-rating-value">4.5</span>
+                                        <i class="fa-solid fa-star rating-star"></i>
+                                    </div>
+                                </div>
+                                <div class="card-price-with-quantity">
+                                    <div class="card-price">Rp <span>150.000,00</span></div>
+                                    <div class="card-quantity">
+                                        (<span>17</span>)
+                                    </div>
+                                </div>
+                                <div class="card-shipping-term"><span>5</span> days</div>
+                                <div class="card-location">Jakarta Barat</div>
+                            </a>
+
+                            <div class="card-buttons">
+                                <span class="card-review"></span>
+                                <span class="card-add-to-cart">Add to Cart</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <a href="product.html" class="card-wrap">
+                                <span class="card-hover"></span>
+                                <img src="img/cards/card4.png" alt="">
+                                <div class="card-title-with-rating">
+                                    <div class="card-title">Vintage Cardigan</div>
+                                    <div class="card-rating">
+                                        <span class="average-rating-value">4.5</span>
+                                        <i class="fa-solid fa-star rating-star"></i>
+                                    </div>
+                                </div>
+                                <div class="card-price-with-quantity">
+                                    <div class="card-price">Rp <span>150.000,00</span></div>
+                                    <div class="card-quantity">
+                                        (<span>17</span>)
+                                    </div>
+                                </div>
+                                <div class="card-shipping-term"><span>5</span> days</div>
+                                <div class="card-location">Jakarta Barat</div>
+                            </a>
+
+                            <div class="card-buttons">
+                                <span class="card-review"></span>
+                                <span class="card-add-to-cart">Add to Cart</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <a href="product.html" class="card-wrap">
+                                <span class="card-hover"></span>
+                                <img src="img/cards/card5.png" alt="">
+                                <div class="card-title-with-rating">
+                                    <div class="card-title">Vintage Cardigan</div>
+                                    <div class="card-rating">
+                                        <span class="average-rating-value">4.5</span>
+                                        <i class="fa-solid fa-star rating-star"></i>
+                                    </div>
+                                </div>
+                                <div class="card-price-with-quantity">
+                                    <div class="card-price">Rp <span>150.000,00</span></div>
+                                    <div class="card-quantity">
+                                        (<span>17</span>)
+                                    </div>
+                                </div>
+                                <div class="card-shipping-term"><span>5</span> days</div>
+                                <div class="card-location">Jakarta Barat</div>
+                            </a>
+
+                            <div class="card-buttons">
+                                <span class="card-review"></span>
+                                <span class="card-add-to-cart">Add to Cart</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <a href="product.html" class="card-wrap">
+                                <span class="card-hover"></span>
+                                <img src="img/cards/card6.png" alt="">
+                                <div class="card-title-with-rating">
+                                    <div class="card-title">Vintage Cardigan</div>
+                                    <div class="card-rating">
+                                        <span class="average-rating-value">4.5</span>
+                                        <i class="fa-solid fa-star rating-star"></i>
+                                    </div>
+                                </div>
+                                <div class="card-price-with-quantity">
+                                    <div class="card-price">Rp <span>150.000,00</span></div>
+                                    <div class="card-quantity">
+                                        (<span>17</span>)
+                                    </div>
+                                </div>
+                                <div class="card-shipping-term"><span>5</span> days</div>
+                                <div class="card-location">Jakarta Barat</div>
+                            </a>
+
+                            <div class="card-buttons">
+                                <span class="card-review"></span>
+                                <span class="card-add-to-cart">Add to Cart</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="product.html" class="card-wrap">
+                                <span class="card-hover"></span>
+                                <img src="img/cards/card7.png" alt="">
+                                <div class="card-title-with-rating">
+                                    <div class="card-title">Vintage Cardigan</div>
+                                    <div class="card-rating">
+                                        <span class="average-rating-value">4.5</span>
+                                        <i class="fa-solid fa-star rating-star"></i>
+                                    </div>
+                                </div>
+                                <div class="card-price-with-quantity">
+                                    <div class="card-price">Rp <span>150.000,00</span></div>
+                                    <div class="card-quantity">
+                                        (<span>17</span>)
+                                    </div>
+                                </div>
+                                <div class="card-shipping-term"><span>5</span> days</div>
+                                <div class="card-location">Jakarta Barat</div>
+                            </a>
+
+                            <div class="card-buttons">
+                                <span class="card-review"></span>
+                                <span class="card-add-to-cart">Add to Cart</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <a href="product.html" class="card-wrap">
+                                <span class="card-hover"></span>
+                                <img src="img/cards/card8.png" alt="">
+                                <div class="card-title-with-rating">
+                                    <div class="card-title">Vintage Cardigan</div>
+                                    <div class="card-rating">
+                                        <span class="average-rating-value">4.5</span>
+                                        <i class="fa-solid fa-star rating-star"></i>
+                                    </div>
+                                </div>
+                                <div class="card-price-with-quantity">
+                                    <div class="card-price">Rp <span>150.000,00</span></div>
+                                    <div class="card-quantity">
+                                        (<span>17</span>)
+                                    </div>
+                                </div>
+                                <div class="card-shipping-term"><span>5</span> days</div>
+                                <div class="card-location">Jakarta Barat</div>
+                            </a>
+
+                            <div class="card-buttons">
+                                <span class="card-review"></span>
+                                <span class="card-add-to-cart">Add to Cart</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <a href="product.html" class="card-wrap">
+                                <span class="card-hover"></span>
+                                <img src="img/cards/card9.png" alt="">
+                                <div class="card-title-with-rating">
+                                    <div class="card-title">Vintage Cardigan</div>
+                                    <div class="card-rating">
+                                        <span class="average-rating-value">4.5</span>
+                                        <i class="fa-solid fa-star rating-star"></i>
+                                    </div>
+                                </div>
+                                <div class="card-price-with-quantity">
+                                    <div class="card-price">Rp <span>150.000,00</span></div>
+                                    <div class="card-quantity">
+                                        (<span>17</span>)
+                                    </div>
+                                </div>
+                                <div class="card-shipping-term"><span>5</span> days</div>
+                                <div class="card-location">Jakarta Barat</div>
+                            </a>
+
+                            <div class="card-buttons">
+                                <span class="card-review"></span>
+                                <span class="card-add-to-cart">Add to Cart</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <div class="wrap">
+                <div class="footer-top">
+                    <a href="#" class="logo">second-goods</a>
+                </div>
+                <div class="footer-bottom">
+
+                    <div class="social">
+                        <a href="fb.com"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                        <a href="instagram.com"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                        <a href="fb.com"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a href="linedin.com"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                    </div>
+
+                    <div class="copyright">&copy; second-goods, Inc. 2021</div>
+
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/simple.carousel.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
